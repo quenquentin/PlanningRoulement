@@ -1,0 +1,249 @@
+package roulementFete;
+import java.util.Random;
+import java.util.Scanner;
+public class Base {
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+
+
+int ntt = 0; // NTT = Nombre de technicienne qui travaille
+// Roulement
+
+// Nuit du 24
+// Jour du 25
+// Nuit du 25
+// Nuit du 31 jusqu'au 1er à 8h
+// Jour du 1er
+
+
+	System.out.println("Veuillez saisir un nombre de techniciennes.");
+	int nbt = sc.nextInt();
+	System.out.println("Vous avez choisi le nombre: " + nbt);
+while (nbt != 10)
+{
+	System.out.println("Veuillez saisir un nombre correct de techniciennes.");
+	nbt = sc.nextInt();
+}	
+		System.out.println("Vous allez saisir le nom des techniciennes.");
+ String n0 = sc.nextLine();
+		System.out.println("Veuillez saisir le nom d'une technicienne. (Encore 10)");
+ String n1 = sc.nextLine();
+		System.out.println("Veuillez saisir le nom d'une technicienne. (Encore 9)");
+ String n2 = sc.nextLine();
+		System.out.println("Veuillez saisir le nom d'une technicienne. (Encore 8)");
+ String n3 = sc.nextLine();
+		System.out.println("Veuillez saisir le nom d'une technicienne. (Encore 7)");
+ String n4 = sc.nextLine();
+		System.out.println("Veuillez saisir le nom d'une technicienne. (Encore 6)");
+ String n5 = sc.nextLine();
+		System.out.println("Veuillez saisir le nom d'une technicienne. (Encore 5)");
+ String n6 = sc.nextLine();
+ 		System.out.println("Veuillez saisir le nom d'une technicienne. (Encore 4)");
+ String n7 = sc.nextLine();
+		System.out.println("Veuillez saisir le nom d'une technicienne. (Encore 3)");
+ String n8 = sc.nextLine();
+		System.out.println("Veuillez saisir le nom d'une technicienne. (Encore 2)");
+ String n9 = sc.nextLine();
+		System.out.println("Veuillez saisir le nom d'une technicienne. (Encore 1)");
+ String n10 = sc.nextLine();
+		System.out.println("Voici le nom des techniciennes choisies.");
+	
+System.out.println(n1);
+System.out.println(n2);
+System.out.println(n3);
+System.out.println(n4);
+System.out.println(n5);
+System.out.println(n6);
+System.out.println(n7);
+System.out.println(n8);
+System.out.println(n9);
+System.out.println(n10);
+System.out.println("------------------------");
+
+while (ntt != 5) {
+// ----------------------------------------------------------------------------------------------------------------------------------1 ERE PERSONNE (n1)
+   	int t1 = new Random().nextInt(2);
+ if (t1==0)
+ 	System.out.println(n1 + " ne travaillera pas.");
+ else {
+   ntt = ntt + 1;
+   		int d1 = new Random(1).nextInt(6);
+
+   	  if (d1==1)
+   	   	System.out.println(n1 + " travaillera la nuit du 24.");
+   	  if (d1==2)
+   	  	System.out.println(n1 + " travaillera le 25 en journée.");
+   	  if (d1==3)
+   	  	System.out.println(n1 + " travaillera la nuit du 25.");
+   	  if (d1==4)
+   	  	System.out.println(n1 + " travaillera la nuit du 31.");
+   	  if (d1==5)
+   	  	System.out.println(n1 + " travaillera le 1er en journée.");
+ }
+// ----------------------------------------------------------------------------------------------------------------------------------2 EME PERSONNE (n2)
+  	int t2 = new Random().nextInt(2);
+ if (t2==0)
+ 	System.out.println(n2 + " ne travaillera pas.");
+ else {
+    ntt = ntt + 1;
+   	  int d2 = new Random(1).nextInt(6);
+   	   	if (d2==1)
+   	   	  System.out.println(n2 + " travaillera la nuit du 24.");
+   	    if (d2==2)
+   	   	  System.out.println(n2 + " travaillera le 25 en journée.");
+   	    if (d2==3)
+   	   	  System.out.println(n2 + " travaillera la nuit du 25.");
+   	    if (d2==4)
+   	   	  System.out.println(n2 + " travaillera la nuit du 31.");
+   	    if (d2==5)
+   	      System.out.println(n2 + " travaillera le 1er en journée.");
+ 	}
+// ----------------------------------------------------------------------------------------------------------------------------------3 EME PERSONNE (n3)
+ 	int t3 = new Random().nextInt(2);
+ if (t3==0)
+ 	System.out.println(n3 + " ne travaillera pas.");
+ else {
+    ntt = ntt + 1;
+   	  int d3 = new Random(1).nextInt(6);
+   	   	if (d3==1)
+   	   	  System.out.println(n3 + " travaillera la nuit du 24.");
+   	    if (d3==2)
+   	   	  System.out.println(n3 + " travaillera le 25 en journée.");
+   	    if (d3==3)
+   	   	  System.out.println(n3 + " travaillera la nuit du 25.");
+   	    if (d3==4)
+   	   	  System.out.println(n3 + " travaillera la nuit du 31.");
+   	    if (d3==5)
+   	      System.out.println(n3 + " travaillera le 1er en journée.");
+ 	}
+// ----------------------------------------------------------------------------------------------------------------------------------4 EME PERSONNE (n4)
+ int t4 = new Random().nextInt(2);
+ if (t4==0)
+ 	System.out.println(n4 + " ne travaillera pas.");
+ else {
+    ntt = ntt + 1;
+   	  int d4 = new Random(1).nextInt(6);
+   	   	if (d4==1)
+   	   	  System.out.println(n4 + " travaillera la nuit du 24.");
+   	    if (d4==2)
+   	   	  System.out.println(n4 + " travaillera le 25 en journée.");
+   	    if (d4==3)
+   	   	  System.out.println(n4 + " travaillera la nuit du 25.");
+   	    if (d4==4)
+   	   	  System.out.println(n4 + " travaillera la nuit du 31.");
+   	    if (d4==5)
+   	      System.out.println(n4 + " travaillera le 1er en journée.");
+ 	}
+// ----------------------------------------------------------------------------------------------------------------------------------5 EME PERSONNE (n5)
+ int t5 = new Random().nextInt(2);
+ if (t5==0)
+ 	System.out.println(n5 + " ne travaillera pas.");
+ else {
+    ntt = ntt + 1;
+   	  int d5 = new Random(1).nextInt(6);
+   	   	if (d5==1)
+   	   	  System.out.println(n5 + " travaillera la nuit du 24.");
+   	    if (d5==2)
+   	   	  System.out.println(n5 + " travaillera le 25 en journée.");
+   	    if (d5==3)
+   	   	  System.out.println(n5 + " travaillera la nuit du 25.");
+   	    if (d5==4)
+   	   	  System.out.println(n5 + " travaillera la nuit du 31.");
+   	    if (d5==5)
+   	      System.out.println(n5 + " travaillera le 1er en journée.");
+ 	 }
+// ----------------------------------------------------------------------------------------------------------------------------------6 EME PERSONNE (n6)
+ 	int t6 = new Random().nextInt(2);
+ if (t6==0)
+ 	System.out.println(n6 + " ne travaillera pas.");
+ else {
+    ntt = ntt + 1;
+   	  int d6 = new Random(1).nextInt(6);
+   	   	if (d6==1)
+   	   	  System.out.println(n6 + " travaillera la nuit du 24.");
+   	    if (d6==2)
+   	   	  System.out.println(n6 + " travaillera le 25 en journée.");
+   	    if (d6==3)
+   	   	  System.out.println(n6 + " travaillera la nuit du 25.");
+   	    if (d6==4)
+   	   	  System.out.println(n6 + " travaillera la nuit du 31.");
+   	    if (d6==5)
+   	      System.out.println(n6 + " travaillera le 1er en journée.");
+ 	}
+// ----------------------------------------------------------------------------------------------------------------------------------7 EME PERSONNE (n7)
+ 	int t7 = new Random().nextInt(2);
+ if (t7==0)
+ 	System.out.println(n7 + " ne travaillera pas.");
+ else {
+    ntt = ntt + 1;
+   	  int d7 = new Random(1).nextInt(6);
+   	   	if (d7==1)
+   	   	  System.out.println(n7 + " travaillera la nuit du 24.");
+   	    if (d7==2)
+   	   	  System.out.println(n7 + " travaillera le 25 en journée.");
+   	    if (d7==3)
+   	   	  System.out.println(n7 + " travaillera la nuit du 25.");
+   	    if (d7==4)
+   	   	  System.out.println(n7 + " travaillera la nuit du 31.");
+   	    if (d7==5)
+   	      System.out.println(n7 + " travaillera le 1er en journée.");
+ 	}
+// ----------------------------------------------------------------------------------------------------------------------------------8 EME PERSONNE (n8)
+ 	int t8 = new Random().nextInt(2);
+ if (t8==0)
+ 	System.out.println(n8 + " ne travaillera pas.");
+ else {
+    ntt = ntt + 1;
+   	  int d8 = new Random(1).nextInt(6);
+   	   	if (d8==1)
+   	   	  System.out.println(n8 + " travaillera la nuit du 24.");
+   	    if (d8==2)
+   	   	  System.out.println(n8 + " travaillera le 25 en journée.");
+   	    if (d8==3)
+   	   	  System.out.println(n8 + " travaillera la nuit du 25.");
+   	    if (d8==4)
+   	   	  System.out.println(n8 + " travaillera la nuit du 31.");
+   	    if (d8==5)
+   	      System.out.println(n8 + " travaillera le 1er en journée.");
+ 	}
+// ----------------------------------------------------------------------------------------------------------------------------------9 EME PERSONNE (n9)
+ 	int t9 = new Random().nextInt(2);
+ if (t9==0)
+ 	System.out.println(n9 + " ne travaillera pas.");
+ else {
+    ntt = ntt + 1;
+   	  int d9 = new Random(1).nextInt(6);
+   	   	if (d9==1)
+   	   	  System.out.println(n9 + " travaillera la nuit du 24.");
+   	    if (d9==2)
+   	   	  System.out.println(n9 + " travaillera le 25 en journée.");
+   	    if (d9==3)
+   	   	  System.out.println(n9 + " travaillera la nuit du 25.");
+   	    if (d9==4)
+   	   	  System.out.println(n9 + " travaillera la nuit du 31.");
+   	    if (d9==5)
+   	      System.out.println(n9 + " travaillera le 1er en journée.");
+ 	}
+// ----------------------------------------------------------------------------------------------------------------------------------10 EME PERSONNE (n10)
+ 	int t10 = new Random().nextInt(2);
+ if (t10==0)
+ 	System.out.println(n10 + " ne travaillera pas.");
+ else {
+    ntt = ntt + 1;
+   	  int d10 = new Random(1).nextInt(6);
+   	   	if (d10==1)
+   	   	  System.out.println(n10 + " travaillera la nuit du 24.");
+   	    if (d10==2)
+   	   	  System.out.println(n10 + " travaillera le 25 en journée.");
+   	    if (d10==3)
+   	   	  System.out.println(n10 + " travaillera la nuit du 25.");
+   	    if (d10==4)
+   	   	  System.out.println(n10 + " travaillera la nuit du 31.");
+   	    if (d10==5)
+   	      System.out.println(n10 + " travaillera le 1er en journée.");
+
+   	    System.out.println("------------------------");
+ 	}
+   }
+  }
+ }
